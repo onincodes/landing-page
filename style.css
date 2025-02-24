@@ -1,0 +1,369 @@
+body {
+  background-color: rgb(240, 240, 240);
+  margin: 0;
+}
+
+/* User Story 15 */
+header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #f5f5f7;
+}
+
+#intro-desktop,
+#nav-bar-desktop,
+#contact-desktop {
+  display: none;
+}
+
+/* TEXT */
+.nav-link {
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: black;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.iphone-name {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: xx-large;
+}
+
+.iphone-intro {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: x-large;
+  font-weight: 300;
+  margin-top: -20px;
+}
+
+.iphone-date {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: gray;
+  font-size: large;
+  font-weight: 300;
+  margin-top: -10px;
+  margin-bottom: 40px;
+}
+
+.iphone-description {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: black;
+  font-size: large;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+/* FOR MOBILE SCREEN */
+#header-img-mobile {
+  height: 200px;
+  width: 100%;
+  object-fit: contain;
+}
+
+#intro-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+#nav-bar-mobile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  width: 100%;
+  background-color: white;
+}
+
+/* User Story 13 */
+#nav-bar-mobile,
+#nav-bar-desktop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+#apple-logo {
+  margin-left: 20px;
+  width: 20px;
+}
+
+#burger-icon {
+  margin-right: 25px;
+  width: 20px;
+}
+
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#video {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+#video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#contact-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 45vw;
+  background-color: #f5f5f7;
+}
+
+#email-text {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 10px;
+  font-weight: 300;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+#email {
+  width: 300px;
+  height: 20px;
+  padding: 0.8vw;
+  font-size: 1.2vw;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 1.5vw;
+}
+
+#submit-button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#submit-button input {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 6px;
+  width: 50px;
+  height: 24px;
+  font-weight: bolder;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  color: white;
+  background-color: #007aff;
+  margin-bottom: 1.5vw;
+}
+
+/* User Story 14 */
+/* FOR TABLET SCREEN */
+@media only screen and (min-width: 768px) {
+  #intro-mobile,
+  #nav-bar-mobile,
+  #contact-mobile {
+    display: none;
+  }
+
+  #contact-desktop {
+    display: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 45vw;
+    background-color: #f5f5f7;
+  }
+
+  #nav-bar-desktop {
+    display: block;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 50px;
+    width: 100%;
+    background-color: white;
+  }
+
+  #intro-desktop {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+
+  #email-text {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+
+  #email {
+    width: 600px;
+    height: 20px;
+    padding: 0.8vw;
+    font-size: 1.2vw;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 1.5vw;
+  }
+
+  #submit-button input {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    font-size: 12px;
+    width: 80px;
+    height: 40px;
+    font-weight: 500;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    color: white;
+    background-color: #007aff;
+    margin-bottom: 1.5vw;
+  }
+
+  #submit-button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  #header-img {
+    display: block;
+    height: 100%;
+    width: 600px;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+}
+
+/* FOR LAPTOP SCREEN */
+@media only screen and (min-width: 1024px) {
+  #intro-mobile,
+  #nav-bar-mobile,
+  #contact-mobile {
+    display: none;
+  }
+
+  #contact-desktop {
+    display: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 45vw;
+    background-color: #f5f5f7;
+  }
+
+  #email-text {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+
+  #email {
+    width: 700px;
+    height: 20px;
+    padding: 0.8vw;
+    font-size: 1.2vw;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 1.5vw;
+  }
+
+  #submit-button input {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    font-size: 12px;
+    width: 80px;
+    height: 40px;
+    font-weight: 500;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    color: white;
+    background-color: #007aff;
+    margin-bottom: 1.5vw;
+  }
+
+  #submit-button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  #nav-bar-desktop {
+    display: block;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 50px;
+    width: 100%;
+    background-color: white;
+  }
+
+  #intro-desktop {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 80px;
+  }
+
+  #header-img {
+    display: block;
+    height: 100%;
+    width: 800px;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+}

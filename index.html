@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Apple</title>
+    <link href="style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+  </head>
+  <body>
+    <!-- User Story 1 -->
+    <header id="header">
+      <!-- User Story 3 -->
+      <nav id="nav-bar">
+        <div id="nav-bar-mobile">
+          <img src="apple-logo.svg" id="apple-logo" />
+          <img src="burger.svg" id="burger-icon" />
+        </div>
+        <div id="nav-bar-desktop">
+          <!-- User Story 4, 5 -->
+          <img src="apple-logo.svg" id="apple-logo" />
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#contact-desktop" class="nav-link">Contact</a>
+        </div>
+      </nav>
+
+      <div id="intro-mobile">
+        <h1 class="iphone-name">iPhone 16e</h1>
+        <h2 class="iphone-intro">Latest iPhone. Greatest price.</h2>
+        <h3 class="iphone-date">Available starting 2.28</h3>
+        <h2 class="iphone-description">Built for Apple Intelligence.</h2>
+        <img src="iPhone16e_2.png" id="header-img-mobile" />
+      </div>
+
+      <div id="intro-desktop">
+        <h1 class="iphone-name">iPhone 16e</h1>
+        <h2 class="iphone-intro">Latest iPhone. Greatest price.</h2>
+        <h3 class="iphone-date">Available starting 2.28</h3>
+        <!-- User Story 2 -->
+        <img src="iPhone16e.png" id="header-img" />
+        <h2 class="iphone-description">Built for Apple Intelligence.</h2>
+      </div>
+    </header>
+
+    <div id="about">
+      <!-- User Story 6 -->
+      <div id="video">
+        <iframe
+          src="https://www.youtube.com/embed/mFuyX1XgJFg?si=_gTZ1dbgZSdWlYGz&amp;start=1&modestbranding=1&rel=0&showinfo=0&controls=1"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <div id="contact-mobile">
+      <!-- User Story 7 -->
+      <form id="form">
+        <label for="email" id="email-text">
+          Subscribe with your email for the latest Apple news</label
+        >
+        <br />
+        <!-- User Story 8, 9, 10 -->
+        <input
+          type="email"
+          name="email"
+          placeholder="Email address"
+          id="email"
+        />
+
+        <div id="submit-button">
+          <!-- User Story 11 -->
+          <input type="submit" value="Submit" id="submit" />
+        </div>
+      </form>
+    </div>
+
+    <div id="contact-desktop">
+      <!-- User Story 7 -->
+      <form id="form">
+        <label for="email" id="email-text">
+          Subscribe with your email for the latest Apple news</label
+        >
+        <br />
+        <!-- User Story 8, 9, 10 -->
+        <input
+          type="email"
+          name="email"
+          placeholder="Email address"
+          id="email"
+        />
+
+        <div id="submit-button">
+          <!-- User Story 11 -->
+          <input type="submit" value="Submit" id="submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
